@@ -11,15 +11,19 @@
 <body>
     <div class="main-component">
         <h1>Who Pays? Let's find out!</h1>
-        <div class="participants">
-            <h2>Enrolled participants</h2>
+        <div id="participantsDiv" class="participants">
+            <h2>Participants</h2>
         </div>
-        <h3>Minimum participants >= 3</h3>
-        <h3>Winning percentage:</h3>
+        <h3 id="minimumParticipants">Minimum participants >= 3</h3>
+        <h3 id="totalParticipants">Total participants: 0</h3>
+        <h3 id="winningPercentage">Winning rate: 0%</h3>
         <input type="text" name="enter-person" id="person-data" placeholder="Enroll ex:Harry">
-        <button class="compute">Enroll Participant</button>
-        <h1>Winner is:</h1>
+        <button id="enroll" class="compute">Enroll Participant</button>
+        <button id="pickWinner" class="compute">Pick Random Winner</button>
+        <h1 id="winnerName">Winner is:</h1>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

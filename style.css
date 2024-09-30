@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background-image: url('img/restaurant.png');
     background-size: cover;
     background-position: center;
@@ -14,6 +14,10 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+.main-component {
+    margin: 30px;
 }
 
 .main-component,
@@ -26,13 +30,14 @@ body {
     width: 70%;
     vertical-align: middle;
     align-items: center;
+    text-align: center;
 }
 
 h1,
 h2,
 h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .compute {
@@ -41,7 +46,7 @@ h3 {
     border: 1px solid black;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 10px;
 }
 
@@ -53,13 +58,13 @@ h3 {
     width: 180px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .contestant {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0;
 }
 
@@ -69,7 +74,8 @@ h3 {
     h2,
     h3,
     .compute,
-    #person-data,.contestant {
+    #person-data,
+    .contestant {
         font-size: 1.8em;
     }
 
