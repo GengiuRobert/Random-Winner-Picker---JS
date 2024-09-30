@@ -68,6 +68,10 @@ h3 {
     margin: 0;
 }
 
+.winner {
+    color: red;
+}
+
 @media screen and (min-width:768px) {
 
     h1,

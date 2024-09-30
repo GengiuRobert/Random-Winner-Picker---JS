@@ -41,6 +41,12 @@ enrollButton.addEventListener("click", () => {
             winningPercentage.textContent = "Winning rate:" + winning + "%";
 
             winnerButton.addEventListener("click", () => {
+
+                const previousWinner = participantsDiv.querySelector('.winner');
+                if (previousWinner) {
+                    previousWinner.classList.remove('winner');
+                }
+
                 let winnerId = randomNumberGenerator(contestants.length);
                 let winnerName = "";
                 for (const winner of contestants) {
@@ -50,6 +56,11 @@ enrollButton.addEventListener("click", () => {
                     }
                 }
                 winnerIs.textContent = "Winner is: " + winnerName + " with id=" + winnerId;
+
+                const winnerP = Array.from(participantsDiv.children).find(p => p.textContent.includes(winnerId));
+                if (winnerP) {
+                    winnerP.classList.add('winner');
+                }
             });
         }
     }
