@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/restaurant.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-component,
+.participants {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    vertical-align: middle;
+    align-items: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.compute {
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.compute:hover {
+    background-color: lightgrey;
+}
+
+#person-data {
+    width: 180px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.contestant {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media screen and (min-width:768px) {
+
+    h1,
+    h2,
+    h3,
+    .compute,
+    #person-data,.contestant {
+        font-size: 1.8em;
+    }
+
+    #person-data {
+        width: 280px;
+        text-align: center;
+    }
+}
